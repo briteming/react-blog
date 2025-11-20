@@ -1,7 +1,7 @@
 ---
 title: 测试
 description: 这是一篇文章
-date: 2025-11-19 20:55
+date: 2025-11-19
 tags:
     - tag1
     - tag2
