@@ -42,7 +42,7 @@ export async function getFileData(dir = "./", id) {
     const html = (
     //    await remark().use(remarkhtml).process(matter.body)
         await remark()
-        .use(html, { sanitize: false }) 
+        .use(remarkhtml, { sanitize: false }) 
         .process(matter.body)
     ).toString();
 
