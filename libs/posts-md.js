@@ -40,7 +40,10 @@ export async function getFileData(dir = "./", id) {
     const matter = fm(data);
 
     const html = (
-        await remark().use(remarkhtml, { allowDangerousHtml: true }).process(matter.body)
+    //    await remark().use(remarkhtml).process(matter.body)
+        await remark()
+        .use(html, { sanitize: false }) 
+        .process(matter.body)
     ).toString();
 
     // 日期格式化
